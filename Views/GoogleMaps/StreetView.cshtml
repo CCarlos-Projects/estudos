@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "StreetView";
+}
+
+@section customStyle {
+    <link href="~/Content/GoogleMaps/street.css" rel="stylesheet" />
+}
+
+<div class="body-container">
+    <div id="horizontal">
+        <div id="maps-containers">
+            <div id="vertical">
+                <div class="splitter-container">
+                    <div id="map-container"></div>
+                </div>
+
+                <div class="splitter-container">
+                    <div id="street-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="details-containers">
+
+        </div>
+    </div>
+</div>
+
+@section customScripts{
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+
+    <script src="~/Scripts/GoogleMaps/streetview.js"></script>
+}
